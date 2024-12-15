@@ -37,7 +37,7 @@ function ProjectsTemplate() {
 
   return (
     <div className="min-h-screen flex flex-col justify-center bg-primary bg-fixed bg-cover bg-no-repeat bg-portfolio p-5 text-primary">
-      <nav className="fixed top-0 left-0 w-full bg-transparent z-10 p-5 flex justify-between items-center">
+      <nav className=" top-0 left-0 w-full bg-transparent z-50 p-5 flex justify-between items-center relative">
         <div className="hidden lg:flex mx-auto gap-10 uppercase font-semibold">
           <a
             href="#about"
@@ -59,15 +59,14 @@ function ProjectsTemplate() {
         </div>
 
         <button
-          className="lg:hidden text-white text-[30px] ml-auto mt-2"
+          className="lg:hidden text-white text-[30px] ml-auto mt-2 z-50"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           ☰
         </button>
 
-        {/* Hamburger menu with z-index */}
         {isMenuOpen && (
-          <div className="absolute top-16 right-0 bg-primary p-5 text-white lg:hidden flex flex-col gap-5 uppercase z-50">
+          <div className="absolute top-16 right-0 bg-primary p-5 text-white lg:hidden flex flex-col gap-5 uppercase z-60">
             <a
               href="#about"
               onClick={() => handleLinkClick("about")}
