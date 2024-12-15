@@ -4,6 +4,7 @@ import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { faCss } from "@fortawesome/free-brands-svg-icons";
 import { faJs } from "@fortawesome/free-brands-svg-icons"
 import { faSass } from "@fortawesome/free-brands-svg-icons";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
 
 function Technologies() {
   return (
@@ -13,6 +14,7 @@ function Technologies() {
             <FontAwesomeIcon icon={faHtml5} />
             <FontAwesomeIcon icon={faCss} />
             <FontAwesomeIcon icon={faJs} />
+            <FontAwesomeIcon icon={faReact} />
             <FontAwesomeIcon icon={faBootstrap} />
             <FontAwesomeIcon icon={faSass} />
             </div>
