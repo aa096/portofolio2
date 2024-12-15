@@ -8,12 +8,12 @@ function AnyCartInfo() {
         <div className="bg-white rounded-xl flex place-items-center z-50 flex-col p-10 mt-[160px] sm:mt-[200px] md:mt-[240px] sl:mt-[280px] lg:ml-[450px] lg:mt-[100px] xl:ml-[550px] xl:mt-[120px] text-secondary max-w-[1200px] w-full">
           <div className="flex flex-row gap-6 justify-center group">
             <img
-              src="src/assets/images/anycartdesk.png"
+              src="public/assets/images/anycartdesk.png"
               alt="AnyCart desktop view"
               className="w-full md:w-1/2 object-contain mb-1 transform transition-transform duration-300 ease-in-out group-hover:scale-105"
             />
             <img
-              src="src/assets/images/anycartmobile.png"
+              src="public/assets/images/anycartmobile.png"
               alt="AnyCart mobile view"
               className="w-20 sm:w-36 lg:w-1/7 object-contain mb-1 transform transition-transform duration-300 ease-in-out group-hover:scale-105"
             />
