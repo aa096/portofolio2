@@ -14,8 +14,8 @@ function Technologies() {
             <FontAwesomeIcon icon={faHtml5} />
             <FontAwesomeIcon icon={faCss} />
             <FontAwesomeIcon icon={faJs} />
-            <FontAwesomeIcon icon={faReact} />
             <FontAwesomeIcon icon={faBootstrap} />
+            <FontAwesomeIcon icon={faReact} />
             <FontAwesomeIcon icon={faSass} />
             </div>
           </div>
