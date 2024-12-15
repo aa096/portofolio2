@@ -14,7 +14,7 @@ export default {
         barlow: ["Barlow", "sans-serif"],
       },
       backgroundImage: {
-        "portfolio": "url('public/images/portfolio.png')",
+        "portfolio": "url('/images/portfolio.png')",
       },
       screens: {
         'sl': "880px"
