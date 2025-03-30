@@ -15,6 +15,7 @@ export default {
       },
       backgroundImage: {
         "portfolio": "url('/images/portfolio.png')",
+        "portfolio2": "url('/images/portfolio2.png')"
       },
       screens: {
         'sl': "880px"

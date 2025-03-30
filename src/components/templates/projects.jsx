@@ -40,77 +40,81 @@ function ProjectsTemplate() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col justify-center bg-primary bg-fixed bg-cover bg-no-repeat bg-portfolio p-5 text-primary">
-      <nav className="fixed top-0 left-0 w-full bg-transparent z-50 p-5 flex justify-between items-center">
-        <div className="hidden lg:flex mx-auto gap-10 uppercase font-semibold">
-          <a
-            href="#about"
-            onClick={() => handleLinkClick("about")}
-            className={`text-white text-xl hover:text-secondary ${activeLink === "about" ? "border-b-2 border-white" : ""}`}
-          >
-            About
-          </a>
-          <a
-            href="#projects"
-            onClick={(e) => {
-              e.preventDefault();
-              handleScrollToSection(projectsRef, "projects");
-            }}
-            className={`text-white text-xl hover:text-secondary ${activeLink === "projects" ? "border-b-2 border-white" : ""}`}
-          >
-            My Projects
-          </a>
-          <a
-            href="#technologies"
-            onClick={(e) => {
-              e.preventDefault();
-              handleScrollToSection(technologiesRef, "technologies");
-            }}
-            className={`text-white text-xl hover:text-secondary ${activeLink === "technologies" ? "border-b-2 border-white" : ""}`}
-          >
-            Technologies
-          </a>
-        </div>
+    <div className="min-h-screen flex flex-col justify-center bg-primary bg-fixed bg-cover bg-no-repeat bg-portfolio2 md:bg-portfolio lg:p-5 text-primary">
+      <nav className="sticky top-0 w-full bg-primary p-5 z-50 flex justify-between items-center">
+  {/* Desktop meny */}
+  <div className="hidden lg:flex mx-auto gap-10 uppercase font-semibold">
+    <a
+      href="#about"
+      onClick={() => handleLinkClick("about")}
+      className={`text-white text-xl hover:text-secondary ${activeLink === "about" ? "border-b-2 border-white" : ""}`}
+    >
+      About
+    </a>
+    <a
+      href="#projects"
+      onClick={(e) => {
+        e.preventDefault();
+        handleScrollToSection(projectsRef, "projects");
+      }}
+      className={`text-white text-xl hover:text-secondary ${activeLink === "projects" ? "border-b-2 border-white" : ""}`}
+    >
+      My Projects
+    </a>
+    <a
+      href="#technologies"
+      onClick={(e) => {
+        e.preventDefault();
+        handleScrollToSection(technologiesRef, "technologies");
+      }}
+      className={`text-white text-xl hover:text-secondary ${activeLink === "technologies" ? "border-b-2 border-white" : ""}`}
+    >
+      Technologies
+    </a>
+  </div>
 
-        <button
-          className="lg:hidden text-white text-[30px] ml-auto mt-2 z-50"
+  {/* Hamburger-knapp for mobil */}
+  <button
+          className="lg:hidden text-white text-[30px] ml-auto z-900"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           ☰
         </button>
 
-        {isMenuOpen && (
-          <div className="absolute top-16 right-0 bg-primary p-5 text-white lg:hidden flex flex-col gap-5 uppercase z-60">
-            <a
-              href="#about"
-              onClick={() => handleLinkClick("about")}
-              className={`text-xl ${activeLink === "about" ? "border-b-2 border-white" : ""}`}
-            >
-              About
-            </a>
-            <a
-              href="#projects"
-              onClick={(e) => {
-                e.preventDefault();
-                handleScrollToSection(projectsRef, "projects");
-              }}
-              className={`text-xl ${activeLink === "projects" ? "border-b-2 border-white" : ""}`}
-            >
-              My Projects
-            </a>
-            <a
-              href="#technologies"
-              onClick={(e) => {
-                e.preventDefault();
-                handleScrollToSection(technologiesRef, "technologies");
-              }}
-              className={`text-xl ${activeLink === "technologies" ? "border-b-2 border-white" : ""}`}
-            >
-              Technologies
-            </a>
-          </div>
-        )}
-      </nav>
+  {/* Mobilmeny */}
+  {isMenuOpen && (
+      <div className="absolute top-20 right-0 bg-primary p-5 rounded-xl text-white lg:hidden flex flex-col gap-5 uppercase z-60">
+      <a
+        href="#about"
+        onClick={() => handleLinkClick("about")}
+        className={`text-xl ${activeLink === "about" ? "border-b-2 border-white" : ""}`}
+      >
+        About
+      </a>
+      <a
+        href="#projects"
+        onClick={(e) => {
+          e.preventDefault();
+          handleScrollToSection(projectsRef, "projects");
+        }}
+        className={`text-xl ${activeLink === "projects" ? "border-b-2 border-white" : ""}`}
+      >
+        My Projects
+      </a>
+      <a
+        href="#technologies"
+        onClick={(e) => {
+          e.preventDefault();
+          handleScrollToSection(technologiesRef, "technologies");
+        }}
+        className={`text-xl ${activeLink === "technologies" ? "border-b-2 border-white" : ""}`}
+      >
+        Technologies
+      </a>
+    </div>
+  )}
+</nav>
+
 
       <section id="about" className="anim-section">
         <About />

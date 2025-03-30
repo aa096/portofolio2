@@ -5,7 +5,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 function About() {
     return (
         <section className="flex justify-center">
-            <div className="bg-white rounded-xl flex place-items-center z-50 flex-col p-10 mt-[210px] sm:mt-[200px] md:mt-[240px] sl:mt-[280px] lg:ml-[450px] lg:mt-[100px] xl:ml-[550px] xl:mt-[120px] text-secondary max-w-[1200px] w-full">
+            <div className="bg-white rounded-xl flex place-items-center z-10 flex-col p-10 mt-[210px] sm:mt-[200px] md:mt-[240px] sl:mt-[280px] lg:ml-[450px] lg:mt-[100px] xl:ml-[550px] xl:mt-[120px] text-secondary max-w-[1200px] w-full">
                 <div className="flex flex-row justify-center">
                     <img
                         src="/images/image33.jpg"
@@ -14,7 +14,7 @@ function About() {
                     />
                 </div>
                 <div className="flex flex-col justify-center items-center p-6 xl:px-32">
-                    <h2 className="font-barlow font-bold text-[24px] lg:text-[36px]">Aashild R. Lauvland</h2>
+                    <h2 className="font-barlow font-bold text-[24px] lg:text-[36px]">Aashild Lauvland Rasmussen</h2>
                     <h3 className="font-barlow text-[16px] lg:text-[24px] text-primary mb-2">Frontend Developer</h3>
                     <p className="font-barlow text-sm lg:text-base">
                         Hi! I'm Aashild, a frontend developer based in Stavanger. I combine creativity with coding to build websites that are functional and visually engaging.

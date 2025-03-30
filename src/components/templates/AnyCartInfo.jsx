@@ -5,7 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 function AnyCartInfo() {
   return (
       <section className="flex justify-center">
-        <div className="bg-white rounded-xl flex place-items-center z-50 flex-col p-10 mt-[160px] sm:mt-[200px] md:mt-[240px] sl:mt-[280px] lg:ml-[450px] lg:mt-[100px] xl:ml-[550px] xl:mt-[120px] text-secondary max-w-[1200px] w-full">
+        <div className="bg-white rounded-xl flex place-items-center z-10 flex-col p-10 mt-[160px] sm:mt-[200px] md:mt-[240px] sl:mt-[280px] lg:ml-[450px] lg:mt-[100px] xl:ml-[550px] xl:mt-[120px] text-secondary max-w-[1200px] w-full">
           <div className="flex flex-row gap-6 justify-center group">
             <img
               src="/images/anycartdesk.png"
