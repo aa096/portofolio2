@@ -6,7 +6,7 @@ function HolidazeInfo() {
   return (
       <section className="flex justify-center">
         <div className="bg-white rounded-xl flex place-items-center z-10 flex-col p-10 lg:ml-[450px] xl:ml-[550px] text-secondary max-w-[1200px] w-full">
-          <div className="flex flex-row gap-6 justify-center group">
+          <div className="flex flex-row flex-wrap gap-6 justify-center group">
             <img
               src="/images/Holidazedesk.png"
               alt="Holidaze desktop view"
