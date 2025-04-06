@@ -41,7 +41,7 @@ function ProjectsTemplate() {
 
   return (
     <div className="min-h-screen flex flex-col justify-center bg-primary md:bg-fixed md:bg-cover bg-contain bg-no-repeat bg-portfolio2 md:bg-portfolio lg:p-5 text-primary">
-      <nav className="sticky top-0 w-full bg-primary p-5 z-50 flex justify-between items-center">
+      <nav className="sticky top-0 w-full bg-primary pe-3 md:p-5 z-50 flex justify-between items-center">
   {/* Desktop meny */}
   <div className="hidden lg:flex mx-auto gap-10 uppercase font-semibold">
     <a
