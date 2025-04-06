@@ -15,7 +15,7 @@ function About() {
                 </div>
                 <div className="flex flex-col justify-center items-center p-6 xl:px-32">
                     <h2 className="font-barlow font-bold text-[24px] lg:text-[36px]">Aashild Lauvland Rasmussen</h2>
-                    <h3 className="font-barlow text-[16px] lg:text-[24px] text-primary mb-2">Frontend Developer</h3>
+                    <h3 className="font-barlow text-[16px] lg:text-[24px] text-primary mb-2 ">Frontend Developer</h3>
                     <p className="font-barlow text-sm lg:text-base">
                         Hi! I'm Aashild, a frontend developer based in Stavanger. I combine creativity with coding to build websites that are functional and visually engaging.
                     </p>

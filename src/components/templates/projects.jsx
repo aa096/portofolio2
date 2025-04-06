@@ -129,7 +129,8 @@ function ProjectsTemplate() {
         <NobleOakInfo />
       </section>
 
-      <section id="technologies" ref={technologiesRef} className={`anim-section`}>
+      <section id="technologies" ref={technologiesRef}className="anim-section mb-12">
+
         <h2 className="text-white uppercase lg:ml-[450px] xl:ml-[550px] mt-[70px] mb-[20px] text-center text-[32px] font-bold">
           Technologies
         </h2>
